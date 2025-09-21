@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root { color-scheme: dark; }
+html, body, #root {
+  height: 100%;
+  font-family: 'Calibri', Arial, sans-serif;
+}
+
+/* Ambient background to match reference */
+.bg-app {
+  background-image:
+    radial-gradient(700px 320px at 12% -10%, rgba(255, 200, 0, 0.06), transparent 60%),
+    radial-gradient(700px 320px at 88% -10%, rgba(255, 200, 0, 0.05), transparent 60%),
+    linear-gradient(180deg, #0b1020 0%, #0b1225 50%, #0a0f1c 100%);
+  background-attachment: fixed;
+}
+.hero-overlay-blue { background-image: linear-gradient(to bottom, rgba(9,12,24,.72), rgba(10,15,28,.84), #0a0f1c); }
+.glass { background: rgba(16,18,26,0.7); border: 1px solid #1f2937; backdrop-filter: blur(10px); }
+.centered-copy { max-width: 56rem; margin-inline: auto; text-align: center; }
